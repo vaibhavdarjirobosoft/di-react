@@ -1,0 +1,7 @@
+.category-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 40px;
+    padding-right: 55px;
+    padding-left: 55px;
+}

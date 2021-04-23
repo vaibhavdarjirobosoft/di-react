@@ -1,0 +1,18 @@
+.category-card {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.category-text-position {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+}
+
+.category-card:hover .category-text-position {
+    bottom: 40%;
+}
