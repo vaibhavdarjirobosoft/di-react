@@ -65,32 +65,26 @@ const Carousel = () => {
         }
     };
     return (
-        <React.Fragment>
-            <div className="carousel">
+        <div className="carousel-container">
+            <div className="carousel-arrow carousel-arrow-left">
                 <Link 
-                    text={<Image location="/previous.png" alt="Discovery" />} 
+                    text={<Image location="/previous.png" alt="Previous" />} 
                     url="/" 
                     onClick={onPrevious} 
                     active="nav" 
                     className="nav-icon"/>
-                <CarouselText content={content[activeContent]}/>
-                <div>
+            </div>
+            <div className="carousel-wrapper">
+                <div className="carousel-card-wrapper">
+                    <CarouselText content={content[activeContent]}/>
                     <Image 
-                        className="border-rad-10" 
+                        className="carousel-card-image" 
                         location={content[activeContent].image}
                         alt={content[activeContent].heading}
                         width={875} 
                         height={490} 
                     />
                 </div>
-                
-                <Link 
-                    text={<Image location="/next.png" alt="Discovery"/>} 
-                    url="/" 
-                    onClick={onNext} 
-                    active="nav" 
-                    className="nav-icon"
-                />
             </div>
             <div className="carousel-indicator">
                 {
@@ -105,7 +99,16 @@ const Carousel = () => {
                     ))
                 }
             </div>
-        </React.Fragment>
+            <div className="carousel-arrow carousel-arrow-right">
+                <Link 
+                    text={<Image location="/next.png" alt="Next"/>} 
+                    url="/" 
+                    onClick={onNext} 
+                    active="nav" 
+                    className="nav-icon"
+                />
+            </div>
+        </div>
     );
 };
 

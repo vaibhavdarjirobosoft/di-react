@@ -5,11 +5,11 @@ import Category from "components/organisms/category/Category";
 
 const Template = () => {
     return (
-        <div>
+        <React.Fragment>
             <Header/>
             <Carousel/>
             <Category/>
-        </div>
+        </React.Fragment>
     );
 };
 

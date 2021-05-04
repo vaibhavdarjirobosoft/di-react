@@ -31,12 +31,16 @@ const categories = [
 
 const Category = () => {
     return (
-        <div className="category-wrapper">
+        <div className="category">
+          <div className="category-arrow category-arrow-left"></div>
+          <div className="category-wrapper">
             {
                 categories.map((category, index) => (
                     <CategoryCard category={category} key={index}/>
                 ))
             }
+            </div>
+            <div className="category-arrow category-arrow-right"></div>
         </div>
     );
 };

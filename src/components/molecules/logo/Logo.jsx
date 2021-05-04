@@ -12,7 +12,7 @@ const Logo = ({ content }) => {
                 alt={content.listAlt || 'list'}
                 className="hamburger"
             />
-            <Link text={<Image location={content.logo} alt={content.logoAlt} width={190}/>} location="/" active="text-link-active"/>
+            <Link text={<Image location={content.logo} alt={content.logoAlt} className="app-logo"/>} location="/" active="text-link-active"/>
         </div>
     );
 };

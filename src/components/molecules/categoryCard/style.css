@@ -1,18 +1,37 @@
 .category-card {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    display: inline;
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    min-width: 202px;
     position: relative;
-    cursor: pointer;
 }
 
-.category-text-position {
+ .category-text-position {
+    width: 100%;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
+    bottom: 18px;
+    display: flex;
+    justify-content: center;
 }
 
 .category-card:hover .category-text-position {
-    bottom: 40%;
+    bottom: 40px;
+}
+
+@media only screen and (max-width: 699px) {
+    .category-card {
+        min-width: 58px;
+    }
+    .border-rad-10 {
+        border-radius: 50%;
+        width: 58px;
+        height: 58px;
+        object-fit: cover;
+    }
+    .category-text-position {
+        position: relative;
+        justify-content: left;
+        bottom: 0;
+    }
 }

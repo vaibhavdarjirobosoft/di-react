@@ -63,3 +63,9 @@
     color: #ffffff;
     font-family: "Roboto-Medium", sans-serif;
 }
+
+@media only screen and (max-width: 699px) {
+    .text-category-text {
+        font-size: 10px;
+    }   
+}

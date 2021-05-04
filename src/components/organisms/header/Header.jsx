@@ -7,19 +7,23 @@ import "./style.css";
 const Header = () => {
     return (
         <div className="header">
-            <Logo content={{
-                logo: "discovery-logo.png",
-                logoAlt: "Discovery",
-                list: "items.jpg",
-                listAlt: "List"
-            }}
-            />
-            <NavLinks content={["Home","Explore","Shorts", "MindBlown", "Kids", "Premium"]}/>
-            <Search content={{
-                placeHolder: "Search for shows, episodes, shorts etc.",
-                button: "Sign In"
-            }}
-            />
+            <div className="header-toolbar">
+                <Logo content={{
+                    logo: "discovery-logo.png",
+                    logoAlt: "Discovery",
+                    list: "items.jpg",
+                    listAlt: "List"
+                }}
+                />
+                <NavLinks content={["Home","Explore","Shorts", "MindBlown", "Kids", "Premium"]}/>
+                <div className="grow">
+                </div>
+                <Search content={{
+                        placeHolder: "Search for shows, episodes, shorts etc.",
+                        button: "Sign In"
+                    }}
+                    />
+            </div>
         </div>
     );
 };

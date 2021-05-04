@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "components/atoms/image/Image";
 import Text from "components/atoms/text/Text";
+import "./style.css"
 
 const CategoryCard = ({ category }) => {
     return (
